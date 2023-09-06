@@ -1,0 +1,16 @@
+C:\Project\ProjectEAD2023\ProjectEAD2023\bin\Debug\net6.0-windows\ProjectEAD2023.exe
+C:\Project\ProjectEAD2023\ProjectEAD2023\bin\Debug\net6.0-windows\ProjectEAD2023.deps.json
+C:\Project\ProjectEAD2023\ProjectEAD2023\bin\Debug\net6.0-windows\ProjectEAD2023.runtimeconfig.json
+C:\Project\ProjectEAD2023\ProjectEAD2023\bin\Debug\net6.0-windows\ProjectEAD2023.dll
+C:\Project\ProjectEAD2023\ProjectEAD2023\bin\Debug\net6.0-windows\ProjectEAD2023.pdb
+C:\Project\ProjectEAD2023\ProjectEAD2023\obj\Debug\net6.0-windows\ProjectEAD2023.Form1.resources
+C:\Project\ProjectEAD2023\ProjectEAD2023\obj\Debug\net6.0-windows\ProjectEAD2023.csproj.GenerateResource.cache
+C:\Project\ProjectEAD2023\ProjectEAD2023\obj\Debug\net6.0-windows\ProjectEAD2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\ProjectEAD2023\ProjectEAD2023\obj\Debug\net6.0-windows\ProjectEAD2023.AssemblyInfoInputs.cache
+C:\Project\ProjectEAD2023\ProjectEAD2023\obj\Debug\net6.0-windows\ProjectEAD2023.AssemblyInfo.cs
+C:\Project\ProjectEAD2023\ProjectEAD2023\obj\Debug\net6.0-windows\ProjectEAD2023.csproj.CoreCompileInputs.cache
+C:\Project\ProjectEAD2023\ProjectEAD2023\obj\Debug\net6.0-windows\ProjectEAD2023.dll
+C:\Project\ProjectEAD2023\ProjectEAD2023\obj\Debug\net6.0-windows\refint\ProjectEAD2023.dll
+C:\Project\ProjectEAD2023\ProjectEAD2023\obj\Debug\net6.0-windows\ProjectEAD2023.pdb
+C:\Project\ProjectEAD2023\ProjectEAD2023\obj\Debug\net6.0-windows\ProjectEAD2023.genruntimeconfig.cache
+C:\Project\ProjectEAD2023\ProjectEAD2023\obj\Debug\net6.0-windows\ref\ProjectEAD2023.dll
