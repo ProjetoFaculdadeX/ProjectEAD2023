@@ -15,7 +15,7 @@ namespace ProjectEAD2023
         private void btmRegister_Click(object sender, EventArgs e)
         {
             FrmRegistre frmRegistre = new FrmRegistre();
-            this.Hide();    
+            this.Hide();
             frmRegistre.Show();
         }
     }

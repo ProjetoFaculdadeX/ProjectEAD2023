@@ -1,6 +1,6 @@
 ﻿namespace ProjectEAD2023
 {
-    partial class FrmRegistre
+    partial class FrmRegistre : Form
     {
         /// <summary>
         /// Required designer variable.
@@ -49,6 +49,7 @@
             btmRegistre.TabIndex = 0;
             btmRegistre.Text = "Cadastrar";
             btmRegistre.UseVisualStyleBackColor = true;
+            btmRegistre.Click += btmRegistre_Click;
             // 
             // txtName
             // 

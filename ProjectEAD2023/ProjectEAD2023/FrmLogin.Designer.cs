@@ -1,4 +1,6 @@
-﻿namespace ProjectEAD2023
+﻿using System.Data.SqlClient;
+
+namespace ProjectEAD2023
 {
     partial class FrmLogin
     {
@@ -6,6 +8,8 @@
         ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+
+
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -58,6 +62,7 @@
             // 
             txtPassword.Location = new Point(295, 195);
             txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(100, 23);
             txtPassword.TabIndex = 2;
             txtPassword.UseWaitCursor = true;
