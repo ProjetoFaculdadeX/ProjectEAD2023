@@ -1,0 +1,89 @@
+06/09/2023 11:01:57	Este log contém informações sobre a operação do esquema importado no projeto 'ProjectDBO2023' no computador 'DESKTOP-AUL6F82' pelo usuário 'Julio'.
+06/09/2023 11:01:58	A importação do esquema de banco de dados foi iniciada.
+06/09/2023 11:02:03	Coletando credenciais do banco de dados
+06/09/2023 11:02:03	Coletando opções de banco de dados
+06/09/2023 11:02:03	Reunindo a opção de configuração no escopo do banco de dados genérico
+06/09/2023 11:02:03	Coletando usuários
+06/09/2023 11:02:03	Coletando funções
+06/09/2023 11:02:03	Coletando funções de aplicativo
+06/09/2023 11:02:03	Coletando associações de função
+06/09/2023 11:02:03	Coletando grupos de arquivos
+06/09/2023 11:02:03	Coletando catálogos de texto completo
+06/09/2023 11:02:03	Coletando assemblies
+06/09/2023 11:02:03	Coletando certificados
+06/09/2023 11:02:03	Coletando chaves assimétricas
+06/09/2023 11:02:03	Coletando chaves simétricas
+06/09/2023 11:02:03	Coletando chaves simétricas criptografadas
+06/09/2023 11:02:03	Coletando esquemas
+06/09/2023 11:02:03	Coletando coleções de esquema XML
+06/09/2023 11:02:03	Coletando tipos de dados definidos pelo usuário
+06/09/2023 11:02:03	Coletando tipos definidos pelo usuário
+06/09/2023 11:02:03	Coletando tipos de tabela
+06/09/2023 11:02:03	Coletando chaves exclusivas para tipos de tabela
+06/09/2023 11:02:03	Coletando chaves primárias para tipos de tabela
+06/09/2023 11:02:03	Reunindo índices para tipos de tabela
+06/09/2023 11:02:03	Coletando restrições de verificação para tipos de tabela
+06/09/2023 11:02:03	Coletando restrições padrão para tipos de tabela
+06/09/2023 11:02:03	Coletando funções de partição
+06/09/2023 11:02:03	Coletando esquemas de partição
+06/09/2023 11:02:03	Coletando funções
+06/09/2023 11:02:03	Coletando funções criptografadas
+06/09/2023 11:02:03	Coletando agregações
+06/09/2023 11:02:03	Coletando procedimentos
+06/09/2023 11:02:03	Coletando procedimentos criptografados
+06/09/2023 11:02:03	Coletando tabelas
+06/09/2023 11:02:03	Coletando chaves primárias
+06/09/2023 11:02:03	Coletando restrições exclusivas
+06/09/2023 11:02:03	Coletando chaves estrangeiras
+06/09/2023 11:02:03	Coletando restrições padrão
+06/09/2023 11:02:03	Coletando restrições de verificação
+06/09/2023 11:02:03	Coletando exibições
+06/09/2023 11:02:03	Coletando exibições criptografadas
+06/09/2023 11:02:03	Coletando índices
+06/09/2023 11:02:03	Coletando estatísticas
+06/09/2023 11:02:03	Coletando listas de palavras irrelevantes de índice de texto completo
+06/09/2023 11:02:03	Coletando listas de propriedades de pesquisa
+06/09/2023 11:02:03	Coletando propriedades de pesquisa
+06/09/2023 11:02:03	Coletando índices de texto completo
+06/09/2023 11:02:03	Coletando índices de repositório de coluna
+06/09/2023 11:02:03	Coletando índices espaciais
+06/09/2023 11:02:03	Coletando índices XML
+06/09/2023 11:02:03	Reunindo índices XML Seletivos
+06/09/2023 11:02:03	Coletando gatilhos criptografados
+06/09/2023 11:02:03	Coletando gatilhos
+06/09/2023 11:02:03	Coletando gatilhos ddl criptografados e clr
+06/09/2023 11:02:03	Coletando gatilhos ddl
+06/09/2023 11:02:03	Criando restrições de borda
+06/09/2023 11:02:03	Coletando sinônimos
+06/09/2023 11:02:03	Coletando padrões
+06/09/2023 11:02:03	Coletando ligações uddt de restrições de dados
+06/09/2023 11:02:03	Coletando regras
+06/09/2023 11:02:03	Coletando ligações uddt de restrições de dados
+06/09/2023 11:02:03	Coletando tipos de mensagem
+06/09/2023 11:02:03	Coletando filas
+06/09/2023 11:02:03	Coletando contratos
+06/09/2023 11:02:03	Coletando serviços
+06/09/2023 11:02:03	Coletando notificações de eventos
+06/09/2023 11:02:03	Coletando ligações de serviço remoto
+06/09/2023 11:02:03	Coletando prioridades do agente
+06/09/2023 11:02:03	Coletando assinaturas
+06/09/2023 11:02:03	Coletando opções de compactação
+06/09/2023 11:02:03	Coletando tipos de sequência
+06/09/2023 11:02:03	Reunindo as políticas de segurança
+06/09/2023 11:02:03	Coletar chaves de criptografia de coluna
+06/09/2023 11:02:03	Coletando chaves mestre de coluna
+06/09/2023 11:02:03	Coletando fontes de dados externas
+06/09/2023 11:02:03	Coletando formatos de arquivo externo
+06/09/2023 11:02:03	Coletando tabelas externas
+06/09/2023 11:02:03	Coletando opções de compactação de índice XML
+06/09/2023 11:02:03	Coletando permissões de banco de dados
+06/09/2023 11:02:03	Coletando propriedades estendidas
+06/09/2023 11:02:03	Coletando assemblies
+06/09/2023 11:02:03	Coletando credenciais
+06/09/2023 11:02:03	Coletando logons
+06/09/2023 11:02:03	Coletando auditorias de servidor
+06/09/2023 11:02:04	Examinando projeto para elementos duplicados
+06/09/2023 11:02:04	Processamento de elementos duplicados concluído
+06/09/2023 11:02:05	Importação do banco de dados concluída.
+06/09/2023 11:02:05	Um resumo da importação foi salvo no seguinte local: C:\Project\ProjectDBO2023\ProjectDBO2023\Importar Logs de Esquema\ProjectDBO2023_20230906020157.log.
+06/09/2023 11:02:05	Clique em Concluir para continuar...
