@@ -36,9 +36,9 @@
             lblPassword = new Label();
             label4 = new Label();
             txtEmail = new TextBox();
-            txtDepartment = new TextBox();
             lblEmail = new Label();
             btnReturn = new Button();
+            cmbDepartment = new ComboBox();
             SuspendLayout();
             // 
             // btmRegistre
@@ -53,7 +53,7 @@
             // 
             // txtName
             // 
-            txtName.Location = new Point(113, 68);
+            txtName.Location = new Point(113, 73);
             txtName.Name = "txtName";
             txtName.Size = new Size(303, 23);
             txtName.TabIndex = 1;
@@ -80,6 +80,7 @@
             // 
             txtPassword.Location = new Point(113, 195);
             txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(128, 23);
             txtPassword.TabIndex = 1;
             // 
@@ -107,13 +108,6 @@
             txtEmail.Size = new Size(303, 23);
             txtEmail.TabIndex = 4;
             // 
-            // txtDepartment
-            // 
-            txtDepartment.Location = new Point(113, 113);
-            txtDepartment.Name = "txtDepartment";
-            txtDepartment.Size = new Size(128, 23);
-            txtDepartment.TabIndex = 5;
-            // 
             // lblEmail
             // 
             lblEmail.AutoSize = true;
@@ -133,14 +127,22 @@
             btnReturn.TextImageRelation = TextImageRelation.TextAboveImage;
             btnReturn.UseVisualStyleBackColor = true;
             // 
+            // cmbDepartment
+            // 
+            cmbDepartment.FormattingEnabled = true;
+            cmbDepartment.Location = new Point(113, 118);
+            cmbDepartment.Name = "cmbDepartment";
+            cmbDepartment.Size = new Size(121, 23);
+            cmbDepartment.TabIndex = 8;
+            // 
             // FrmRegistre
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(454, 555);
+            Controls.Add(cmbDepartment);
             Controls.Add(btnReturn);
             Controls.Add(lblEmail);
-            Controls.Add(txtDepartment);
             Controls.Add(txtEmail);
             Controls.Add(label4);
             Controls.Add(lblDepartment);
@@ -149,8 +151,11 @@
             Controls.Add(txtPassword);
             Controls.Add(txtName);
             Controls.Add(btmRegistre);
+            MaximizeBox = false;
             Name = "FrmRegistre";
-            Text = "FrmRegistre";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Cadastro Usuário";
+            Load += FrmRegistre_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -165,8 +170,8 @@
         private Label lblPassword;
         private Label label4;
         private TextBox txtEmail;
-        private TextBox txtDepartment;
         private Label lblEmail;
         private Button btnReturn;
+        private ComboBox cmbDepartment;
     }
 }

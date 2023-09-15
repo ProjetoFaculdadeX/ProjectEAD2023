@@ -48,7 +48,7 @@ namespace ProjectEAD2023
             btmLogin.TabIndex = 0;
             btmLogin.Text = "Entrar";
             btmLogin.UseVisualStyleBackColor = true;
-            btmLogin.UseWaitCursor = true;
+            btmLogin.Click += btmLogin_Click;
             // 
             // txtUser
             // 
@@ -56,7 +56,6 @@ namespace ProjectEAD2023
             txtUser.Name = "txtUser";
             txtUser.Size = new Size(100, 23);
             txtUser.TabIndex = 1;
-            txtUser.UseWaitCursor = true;
             // 
             // txtPassword
             // 
@@ -65,7 +64,6 @@ namespace ProjectEAD2023
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(100, 23);
             txtPassword.TabIndex = 2;
-            txtPassword.UseWaitCursor = true;
             // 
             // lblUser
             // 
@@ -75,7 +73,6 @@ namespace ProjectEAD2023
             lblUser.Size = new Size(50, 15);
             lblUser.TabIndex = 3;
             lblUser.Text = "Usuario:";
-            lblUser.UseWaitCursor = true;
             // 
             // lblPassword
             // 
@@ -85,7 +82,6 @@ namespace ProjectEAD2023
             lblPassword.Size = new Size(42, 15);
             lblPassword.TabIndex = 4;
             lblPassword.Text = "Senha:";
-            lblPassword.UseWaitCursor = true;
             // 
             // btmRegister
             // 
@@ -95,7 +91,6 @@ namespace ProjectEAD2023
             btmRegister.TabIndex = 5;
             btmRegister.Text = "Cadatro";
             btmRegister.UseVisualStyleBackColor = true;
-            btmRegister.UseWaitCursor = true;
             btmRegister.Click += btmRegister_Click;
             // 
             // FrmLogin
@@ -109,10 +104,10 @@ namespace ProjectEAD2023
             Controls.Add(txtPassword);
             Controls.Add(txtUser);
             Controls.Add(btmLogin);
+            MaximizeBox = false;
             Name = "FrmLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ProjectEAD2023";
-            UseWaitCursor = true;
-            Load += FrmLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }

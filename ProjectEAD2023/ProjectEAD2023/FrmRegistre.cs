@@ -15,60 +15,60 @@ namespace ProjectEAD2023
 {
     public partial class FrmRegistre : Form
     {
+        FrmLogin frmLogin = new FrmLogin();
+        Banco.UserDataBase user = new Banco.UserDataBase();
+
         public FrmRegistre()
         {
             InitializeComponent();
         }
-
-
 
         private void btmRegistre_Click(object sender, EventArgs e)
         {
             //Conexão com banco
 
             SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-AUL6F82\MSSQL;Initial Catalog=ProjectEAD;Integrated Security=SSPI;TrustServerCertificate=True");
-
-            string sql = "INSERT INTO NEWUSER_LOGIN(NOME_USER, DEPARTMENT, EMAIL, USER_PASSWORD, DATE_CREATE, DATE_MODIFIED) VALUES (@NOME_USER, @DEPARTMENT, @EMAIL, @USER_PASSWORD, @DATE_CREATE, @DATE_MODIFIED)";
-            //int userID = 1;
-           
-
-            DateTime dateTime = DateTime.Now;
-
-
             try
             {
-                string nome = txtName.Text;
-                string department = txtDepartment.Text;
-                string email = txtEmail.Text;
-                string password = BD.Criptografar(txtPassword.Text);
-                SqlCommand c = new(sql, con);
+                string strNome = txtName.Text;
+                int intDepartment = Int32.Parse(cmbDepartment.SelectedValue.ToString());
+                string strEmail = txtEmail.Text;
+                string strPassword = "";
 
-                //c.Parameters.Add("@USER_ID", SqlDbType.VarChar).
-                c.Parameters.Add("@NOME_USER", SqlDbType.VarChar).Value = nome;
-                c.Parameters.Add("@DEPARTMENT", SqlDbType.VarChar).Value = department;
-                c.Parameters.Add("@EMAIL", SqlDbType.VarChar).Value = email;
-                c.Parameters.Add("@USER_PASSWORD", SqlDbType.VarChar).Value = password;
-                c.Parameters.Add(new SqlParameter("@DATE_CREATE", dateTime));
-                c.Parameters.Add(new SqlParameter("@DATE_MODIFIED", dateTime));
 
-                con.Open();
+                if (strNome != "" || intDepartment == 0 || strEmail != "" || strPassword != "")
+                {
+                    strPassword = BD.Criptografar(txtPassword.Text);
 
-                c.ExecuteNonQuery();
+                    user.UserRegister(strNome, intDepartment, strEmail, strPassword, DateTime.Now, DateTime.Now);
+                    MessageBox.Show("CADASTRO REALIZADO COM SUCESSO!", "Usuário", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                MessageBox.Show("CADASTRO REALIZADO COM SUCESSO!");
-
+                    this.Close();
+                    frmLogin.Show();
+                }
+                else
+                    MessageBox.Show("Preencha todos os campos obrigatórios!", "Usuário", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Ocorreu um erro" + ex);
                 con.Close();
             }
-            finally 
-            { 
+            finally
+            {
                 con.Close();
             }
 
 
+        }
+
+        private void FrmRegistre_Load(object sender, EventArgs e)
+        {
+            DataTable DepartmentList = user.DepartamentList();
+
+            cmbDepartment.ValueMember = "DEPARTMENT_ID";
+            cmbDepartment.DisplayMember = "DEPARTMENT";
+            cmbDepartment.DataSource = DepartmentList;
         }
     }
 }
