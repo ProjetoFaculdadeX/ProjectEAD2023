@@ -27,7 +27,8 @@ namespace ProjectEAD2023
         {
             //Conexão com banco
 
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-AUL6F82\MSSQL;Initial Catalog=ProjectEAD;Integrated Security=SSPI;TrustServerCertificate=True");
+            SqlConnection con = new SqlConnection(@"Data Source=JULIO_FREITAS;Initial Catalog=ProjetoEAD;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-AUL6F82\MSSQL;Initial Catalog=ProjectEAD;Integrated Security=SSPI;TrustServerCertificate=True");
             try
             {
                 string strNome = txtName.Text;
@@ -69,6 +70,11 @@ namespace ProjectEAD2023
             cmbDepartment.ValueMember = "DEPARTMENT_ID";
             cmbDepartment.DisplayMember = "DEPARTMENT";
             cmbDepartment.DataSource = DepartmentList;
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            frmLogin.Show();
         }
     }
 }

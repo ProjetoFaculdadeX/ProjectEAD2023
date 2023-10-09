@@ -49,6 +49,7 @@
             button1.Text = "Cadastro Produto";
             button1.TextAlign = ContentAlignment.TopCenter;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 

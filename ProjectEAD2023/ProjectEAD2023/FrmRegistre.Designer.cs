@@ -126,6 +126,7 @@
             btnReturn.Text = "Voltar";
             btnReturn.TextImageRelation = TextImageRelation.TextAboveImage;
             btnReturn.UseVisualStyleBackColor = true;
+            btnReturn.Click += btnReturn_Click;
             // 
             // cmbDepartment
             // 

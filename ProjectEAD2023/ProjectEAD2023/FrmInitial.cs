@@ -21,5 +21,12 @@ namespace ProjectEAD2023
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmRegistreProduct frmRegistreProduct = new FrmRegistreProduct();
+            this.Hide();
+            frmRegistreProduct.ShowDialog();
+        }
     }
 }

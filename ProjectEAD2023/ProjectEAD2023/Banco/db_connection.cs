@@ -11,7 +11,7 @@ namespace ProjectEAD2023.Banco
     class DataBaseConnection
     {
         //Conexão com banco
-        public static string strConnection = @"Data Source=DESKTOP-4ADGKLC;Initial Catalog=ProjetoEAD;Integrated Security=SSPI;TrustServerCertificate=True";
+        public static string strConnection = @"Data Source=JULIO_FREITAS;Initial Catalog=ProjetoEAD;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
         public static int ExecuteSqlCommand(SqlCommand strSql)
         {
